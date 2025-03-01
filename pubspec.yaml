@@ -1,0 +1,38 @@
+name: sugar
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.3 <4.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.12.1 # Firebase Core
+  cloud_firestore: ^5.6.5 # Firestore
+  firebase_auth: ^5.5.1 # Firebase Authentication
+  firebase_storage: ^12.4.4 # Firebase Storage
+  http: ^1.3.0 # For making HTTP requests
+  barcode_scan2: ^4.5.0 # For barcode scanning (optional)
+  intl: ^0.19.0
+  # Add other dependencies as needed
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# Flutter-specific configuration
+flutter:
+  assets:
+    - assets/SugarSync.png
+    - assets/food.jpeg
+    - assets/search.png
+
+  uses-material-design: true
