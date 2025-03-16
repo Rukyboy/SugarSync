@@ -442,6 +442,15 @@ class _SearchScreenState extends State<SearchScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: Column(
               children: <Widget>[
+                // New Image Widget
+                Image.asset(
+                  'assets/search.png',
+                  height: 250, // Adjust height as needed
+                  width: 350, // Adjust width as needed
+                  fit: BoxFit.contain,
+                ),
+                SizedBox(height: 5), // Small spacing between image and search bar
+
                 Text(
                   'Enter your product to check the sugar level',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
